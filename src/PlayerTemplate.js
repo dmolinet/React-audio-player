@@ -1,6 +1,5 @@
 import React from "react";
-import { render } from "react-dom";
-import ReactPlayer from 'react-player'
+import MediaPlayer from './components/MediaPlayer'
 
 /*
 The goal is to create an audio player, similar to what you'd find at the bottom of the Spotify app.
@@ -45,36 +44,21 @@ class Player extends React.Component {
         artworkUrl: "https://cps-static.rovicorp.com/3/JPG_500/MI0003/626/MI0003626958.jpg?partner=allrovi.com",
         mediaUrl: "https://p.scdn.co/mp3-preview/9ec5fce4b39656754da750499597fcc1d2cc82e5?cid=1cef747d7bdf4c52ac981490515bda71",
         durationMilliseconds: 30000
-      },
+      },   
     ];
   }
+
   render() {
     return (
-      <div>
-        <MediaPlayer />
+      <div className="Container">
+        <div className="Content" >
+          <p> Welcome to React Media Player</p>
+        </div>
+        <MediaPlayer tracks={this.tracks}  />
       </div>
     );
   }
 }
 
-/*
-Library documentation: https://www.npmjs.com/package/react-player
-*/
-class MediaPlayer extends React.Component {
-  render() {
-    return (
-      <div>
-        <ReactPlayer
-          ref="reactPlayer"
-          playing={false}
-          height={'0px'}
-          width={'0px'}
-          config={{ file: { forceAudio: true } }}
-          // Currently populated with a sample URL.
-          url={"https://p.scdn.co/mp3-preview/6aba2f4e671ffe07fd60807ca5fef82d48146d4c?cid=1cef747d7bdf4c52ac981490515bda71"} /> 
-      </div>
-    )
-  }
-}
-
 export default Player;
+

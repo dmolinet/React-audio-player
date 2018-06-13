@@ -1,3 +1,89 @@
+html, body, #root{
+  height: 100vh;
+  margin: 0;
+}
+.Container {
+  height: 100%;
+  display:flex;
+  flex-direction: column;  
+}
+.Content{
+  display:flex;
+  flex: 1;
+  overflow: auto;
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+.Content p{
+  margin: auto;
+  color:lightgray
+  
+}
+.react-player{
+  display: none
+}
+
+
+
+#MediaPlayer {
+  background-color:#1e2024;
+  padding: 10px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#Controls{
+  display:flex;
+  flex:1;
+  align-items: center;
+  margin: auto;
+  color:lightgray;
+  flex-direction: column;
+}
+
+#Seek{
+  margin: 5px;
+  font-size: 0.7em;
+}
+#Seek input[type=range]{
+  max-width: 80%;
+  min-width: 300px;
+}
+
+.Buttons{
+  margin:auto;
+}
+.Buttons i{
+  margin:0 10px;
+}
+
+#SongDetail{
+  flex-basis: 20%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display:flex;
+  justify-content: space-around;
+}
+
+#Cover {
+  height: auto; 
+  width: auto; 
+  max-height: 70px;
+}
+
+#TrackName{
+  color: white;
+  font-size: .8em;
+}
+#ArtistName{
+  color: grey;
+  font-size: .7em;
+}
+
+
+
 .App {
   text-align: center;
 }
