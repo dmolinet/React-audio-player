@@ -1,4 +1,6 @@
 import React from 'react';
+import './SongDetail.css';
+
 const SongDetail = props => (
     <div id="SongDetail"> 
       <div className="column"><img  alt="{props.currentTrack.artistName}" id="Cover" src={props.currentTrack.artworkUrl} /></div>

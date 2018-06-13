@@ -1,0 +1,11 @@
+.react-player{
+    display: none
+  }
+  
+  #MediaPlayer {
+    background-color:#1e2024;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }

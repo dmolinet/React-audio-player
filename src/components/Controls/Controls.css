@@ -1,0 +1,25 @@
+#Controls{
+    display:flex;
+    flex:1;
+    align-items: center;
+    margin: auto;
+    color:lightgray;
+    flex-direction: column;
+  }
+  
+  #Seek{
+    margin: 5px;
+    font-size: 0.7em;
+  }
+  #Seek input[type=range]{
+    max-width: 80%;
+    min-width: 300px;
+  }
+  
+  .Buttons{
+    margin:auto;
+  }
+  .Buttons i{
+    margin:0 10px;
+  }
+  

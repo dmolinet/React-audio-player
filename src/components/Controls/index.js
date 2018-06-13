@@ -5,6 +5,8 @@ import faCaretLeft from '@fortawesome/fontawesome-free-solid/faCaretLeft'
 import faCaretRight from '@fortawesome/fontawesome-free-solid/faCaretRight'
 import faPlayCircle from '@fortawesome/fontawesome-free-solid/faPlayCircle'
 import faPauseCircle from '@fortawesome/fontawesome-free-solid/faPauseCircle'
+import './Controls.css';
+
 fontawesome.library.add( faCaretLeft, faCaretRight,faPlayCircle,faPauseCircle )
 
 const Controls = props => (

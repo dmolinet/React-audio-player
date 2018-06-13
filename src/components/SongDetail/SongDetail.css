@@ -1,0 +1,22 @@
+#SongDetail{
+    flex-basis: 20%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display:flex;
+    justify-content: space-around;
+  }
+  
+  #Cover {
+    height: auto; 
+    width: auto; 
+    max-height: 70px;
+  }
+  
+  #TrackName{
+    color: white;
+    font-size: .8em;
+  }
+  #ArtistName{
+    color: grey;
+    font-size: .7em;
+  }
+  

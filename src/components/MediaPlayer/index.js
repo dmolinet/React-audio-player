@@ -2,6 +2,7 @@ import React from "react";
 import ReactPlayer from 'react-player'
 import SongDetail from '../SongDetail'
 import Controls from '../Controls'
+import './MediaPlayer.css';
 /*
 Library documentation: https://www.npmjs.com/package/react-player
 */
@@ -76,7 +77,7 @@ class MediaPlayer extends React.Component {
       console.log('onSeek') 
       this.setState({ played: parseFloat(e.target.value) })
     }
-    
+
     onSeekMouseUp = e => {
       this.setState({ seeking: false })
       this.player.seekTo(parseFloat(e.target.value))
